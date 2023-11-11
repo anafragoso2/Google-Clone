@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    /*El padding es un margen hacia dentro */
+    padding: 0;
+    /*Fuentes del texto */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+/*----------------------------------------------------------------*/
+/*NAVEGACIÓN*/
+
+header{
+    
+    width: 100%;
+    height: 60px;
+}
+
+/*Entramos a header y luego a nav. Header->nav*/
+header nav{
+    /*Para justificar a la derecha
+    display: habilita más propiedades para mover elementos*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*entrar a una clase del nav, un elemento de adentro del header*/
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /*para eliminar los bullets points*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    /* quitamos lo subrayado de los botones*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    /*con este margen estamos marcando un espacio entre elementos
+    hacia la izquierda */
+    margin-right: 20px;
+}
+
+
+/*Agregando el icono del menú*/
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-size: contain;
+    /*Cambiar tamaño*/
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/*Imagen del usuario*/
+nav .nav-right-section img{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+/*------------------------------------------------------*/
+/*SECCIÓN DE MAIN*/
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 490px;
+    /*Centrar absolutamente gracias a los margenes automáticos*/
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+   
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 500px;
+}
+
+main .main-input input{
+    height: 35px;
+    /*quiitar el border*/
+    border: none;
+    /*quitar el borde al dar click*/
+    outline: none;
+    width: 350px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 13%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 3%;
+
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+/*-------------------------------------------------*/
+/*BOTONES DEJABO DE LA BARRA DE NAVEGACIÓN*/
+
+main .botones .boton-buscar{
+    margin-top: 2.5%;
+    align-items: center;
+    
+}
+
+main .botones .boton-buscar .buscar{
+    /*Alinear el elemento al centro*/
+    width: 150px;
+    height: 45px;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 9px;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .botones .boton-buscar .suerte{
+    width: 150px;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: 9px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------------------------------------*/
+/*BOTONES DEL FOOOTER*/
+footer{
+    margin-top:180px;
+    width: 100%;
+    height: 98x;
+    margin-bottom: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    background-color: #eeeeee;
+    position: absolute;
+    display: grid;
+    
+    /*align-items: center;*/
+
+}
+
+/*Para centrar el primer textp*/
+footer .mex{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding-top:11px;
+}
+
+footer .izquierda{
+    list-style: none;
+    margin-left:15px;
+    /*convertir la lista en horizontal*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+footer .izquierda a{
+    margin-right: 20px;
+    padding: 0px;
+    color: black;
+}
+
+footer .derecha{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    align-items: center;
+    
+}
+
+footer .derecha a{
+    margin-left: 20px;
+    color: black;
+}
+
+
