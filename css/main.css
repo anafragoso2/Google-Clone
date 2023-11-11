@@ -162,51 +162,50 @@ main .botones .boton-buscar .suerte{
 /*-------------------------------------------------*/
 /*BOTONES DEL FOOOTER*/
 footer{
-    margin-top:180px;
     width: 100%;
-    height: 98x;
-    margin-bottom: none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: small;
     background-color: #eeeeee;
     position: absolute;
-    display: grid;
-    
-    /*align-items: center;*/
-
+    bottom:0;
 }
 
 /*Para centrar el primer textp*/
 footer .mex{
-    margin-left: 15px;
-    margin-bottom: 15px;
-    padding-top:11px;
+    justify-self: right;
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+footer nav{
+    border: 1px solid #ccc;
+    display: flex;
 }
 
-footer .izquierda{
+footer ul{
+    margin: 10px;
     list-style: none;
-    margin-left:15px;
-    /*convertir la lista en horizontal*/
     display: flex;
+    padding-left:0%;
+}
+
+footer nav .izquierda{
+    justify-self: right;
+    margin-left: 15px;
     justify-content: flex-start;
-    align-items: center;
-    
+
 }
 
-footer .izquierda a{
-    margin-right: 20px;
-    padding: 0px;
-    color: black;
+footer ul li a{
+    margin: 10px;
+    color: #000;
 }
 
-footer .derecha{
-    list-style-type: none;
-    display: flex;
+footer nav .derecha{
     justify-content: flex-end;
-    margin-right: 15px;
-    align-items: center;
-    
+    flex: 2;
 }
 
 footer .derecha a{
