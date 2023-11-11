@@ -3,8 +3,9 @@ body{
     /*El padding es un margen hacia dentro */
     padding: 0;
     /*Fuentes del texto */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
 }
 
 /*----------------------------------------------------------------*/
@@ -74,7 +75,7 @@ main {
 }
 
 main .main-logo{
-    width: 530px;
+    width: 490px;
     /*Centrar absolutamente gracias a los margenes automáticos*/
     margin: 0 auto;
 }
@@ -139,18 +140,78 @@ main .botones .boton-buscar{
 main .botones .boton-buscar .buscar{
     /*Alinear el elemento al centro*/
     width: 150px;
-    height: 40px;
+    height: 45px;
     align-items: center;
     margin-right: 30px;
     border-radius: 9px;
     border:none;
-
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 main .botones .boton-buscar .suerte{
     width: 150px;
-    height: 40px;
+    height: 45px;
     margin-left: 10px;
     border-radius: 9px;
     border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+/*-------------------------------------------------*/
+/*BOTONES DEL FOOOTER*/
+footer{
+    margin-top:180px;
+    width: 100%;
+    height: 98x;
+    margin-bottom: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    background-color: #eeeeee;
+    position: absolute;
+    display: grid;
+    
+    /*align-items: center;*/
+
+}
+
+/*Para centrar el primer textp*/
+footer .mex{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding-top:11px;
+}
+
+footer .izquierda{
+    list-style: none;
+    margin-left:15px;
+    /*convertir la lista en horizontal*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+footer .izquierda a{
+    margin-right: 20px;
+    padding: 0px;
+    color: black;
+}
+
+footer .derecha{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    align-items: center;
+    
+}
+
+footer .derecha a{
+    margin-left: 20px;
+    color: black;
+}
+
+
